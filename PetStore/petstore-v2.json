@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
     "title": "Swagger Petstore",
@@ -25,7 +25,7 @@
             "name": "limit",
             "in": "query",
             "description": "How many items to return at one time (max 100)",
-            "required": true,
+            "required": false,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -163,15 +163,12 @@
           "message"
         ],
         "properties": {
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
           "message": {
             "type": "string"
           },
-          "details": {
-            "type": "string"
+          "code": {
+            "type": "integer",
+            "format": "int32"
           }
         }
       }
