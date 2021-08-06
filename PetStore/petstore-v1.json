@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "Swagger Petstore",
+    "title": "Brave Broswer,",
     "license": {
       "name": "MIT"
     }
@@ -15,17 +15,17 @@
   "paths": {
     "/pets": {
       "get": {
-        "summary": "List all pets",
-        "operationId": "listPets",
+        "summary": "Get Bat Tokens",
+        "operationId": "Collect Bat ",
         "tags": [
-          "pets"
+          "Bat"
         ],
         "parameters": [
           {
             "name": "limit",
             "in": "query",
             "description": "How many items to return at one time (max 100)",
-            "required": false,
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -34,10 +34,10 @@
         ],
         "responses": {
           "200": {
-            "description": "A paged array of pets",
+            "description": "Bat Tokens",
             "headers": {
               "x-next": {
-                "description": "A link to the next page of responses",
+                "description": "https://github.com/andrea-mariadb-2/github.io",
                 "schema": {
                   "type": "string"
                 }
@@ -46,17 +46,17 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pets"
+                  "$ref": "#/components/schemas/Bats"
                 }
               }
             }
           },
           "default": {
-            "description": "unexpected error",
+            "description": "buid yarn lock",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "$ref": "#/components/schemas/buid-yarn"
                 }
               }
             }
@@ -64,10 +64,10 @@
         }
       },
       "post": {
-        "summary": "Create a pet",
-        "operationId": "createPets",
+        "summary": "Create a Wallet",
+        "operationId": "createwallets",
         "tags": [
-          "pets"
+          "wallets"
         ],
         "responses": {
           "201": {
@@ -153,7 +153,7 @@
       "Pets": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/Pet"
+          "$ref": "#/components/schemas/run-program/"
         }
       },
       "Error": {
